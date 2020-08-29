@@ -1,0 +1,34 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 100px 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "header header"
+    "content map"
+    "content chat";
+}
+.header {
+  grid-area: header;
+  justify-self: center;
+}
+.map {
+  grid-area: map;
+}
+.chat {
+  grid-area: chat;
+}
+.content {
+  grid-area: content;
+}
+.sun {
+  position: fixed;
+  top: -40px;
+  right: -40px;
+  width: 100px;
+}
