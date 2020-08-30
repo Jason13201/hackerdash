@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 const AsciiTable = require("ascii-table");
+const chrono = require("chrono-node");
 const config = require("./config.json");
 const { news, hackathons } = require("./hacks");
 
@@ -18,9 +19,11 @@ const people = [
   {
     name: "PoopDeLaScoop#7482",
     timezone: "GMT+0530",
-    skills: "I do graphic design and have some experience with discord-py ;)",
+    skills: "Octocat winner that does graphic design and has some experience with discord-py ;)",
   },
 ];
+
+const events = [];
 
 client.on("message", message => {
   if (message.content === "!ping") {
@@ -97,6 +100,48 @@ client.on("message", message => {
       rows: people.map(elem => [elem.name, elem.timezone, elem.skills]),
     });
     message.channel.send("```\n" + table.toString() + "```");
+  }
+  if (message.content === "!lft") {
+    message.channel.send(
+      "Great to hear that you want to join a team! What's your timezone and skills?"
+    );
+    message.channel
+      .awaitMessages(response => response.author.id == message.author.id, {
+        max: 1,
+        time: 30000,
+        errors: ["time"],
+      })
+      .then(collected => {
+        const reply = collected.first();
+        const pieces = reply.content.split(" ");
+        reply.channel.send("Successfully added to the list :+1:");
+        people.push({ name: reply.author.tag, timezone: pieces.shift(), skills: pieces.join(" ") });
+      });
+  }
+  if (message.content.startsWith("!remind")) {
+    const args = message.content.split(" ");
+    args.shift();
+    message.channel.send("When is the event?");
+    message.channel
+      .awaitMessages(response => response.author.id == message.author.id, {
+        max: 1,
+        time: 30000,
+        errors: ["time"],
+      })
+      .then(collected => {
+        const reply = collected.first();
+        const eventDate = chrono.parseDate(reply.content);
+        events.push({ name: args.join(" "), time: eventDate });
+        message.channel.send(
+          `Great! I will remind you to attend **${args.join(
+            " "
+          )}** at **${eventDate.toLocaleString()}** :smile:`
+        );
+        console.log(events);
+        setTimeout(() => {
+          message.channel.send(`The **${args.join(" ")}** event starts now, get ready to join!`);
+        }, eventDate - Date.now());
+      });
   }
 });
 

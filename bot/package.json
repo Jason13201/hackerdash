@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "ascii-table": "0.0.9",
+    "chrono-node": "^2.1.8",
     "discord.js": "^12.3.1"
   }
 }
