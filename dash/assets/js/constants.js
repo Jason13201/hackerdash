@@ -318,7 +318,8 @@ var hackathons = [
       "https://mosa-summer-2020-hackathon.devpost.com/?ref_content=default&ref_feature=challenge&ref_medium=discover",
     desc: "A great opportunity to team up with fellow Online MCITers and showcase your skills!!",
     image:
-      "//challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_thumbnails/001/174/200/datas/medium.png",
+      "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_thumbnails/001/174/200/datas/medium.png",
+    date: "11:45pm EDT Aug 30, 2020",
   },
   {
     name: "International Create Challenge",
@@ -326,7 +327,8 @@ var hackathons = [
       "https://icc-2020.devpost.com/?ref_content=default&ref_feature=challenge&ref_medium=discover",
     desc: "ICC'2020: From idea to prototype!",
     image:
-      "//challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_thumbnails/001/032/355/datas/medium.png",
+      "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_thumbnails/001/032/355/datas/medium.png",
+    date: "5:00pm CEST Aug 30, 2020",
   },
   {
     name: "Healtech Istanbul",
@@ -334,7 +336,8 @@ var hackathons = [
       "https://healtech.devpost.com/?ref_content=default&ref_feature=challenge&ref_medium=discover",
     desc: "Covid-19 solutions hackathon",
     image:
-      "//challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_thumbnails/001/198/769/datas/medium.png",
+      "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_thumbnails/001/198/769/datas/medium.png",
+    date: "3:00pm EDT Aug 30, 2020",
   },
   {
     name: "KuriusHacks",
@@ -342,7 +345,8 @@ var hackathons = [
       "https://kuriushacks-2020.devpost.com/?ref_content=default&ref_feature=challenge&ref_medium=discover",
     desc: "Empowering the youth to change the world with technology.",
     image:
-      "//challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_thumbnails/001/175/714/datas/medium.png",
+      "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_thumbnails/001/175/714/datas/medium.png",
+    date: "6:00pm EDT Aug 30, 2020",
   },
   {
     name: "AfriHack",
@@ -350,7 +354,8 @@ var hackathons = [
       "https://afrihack2020.devpost.com/?ref_content=default&ref_feature=challenge&ref_medium=discover",
     desc: "AFRIHACK Post-Pandemic Hackathon for Africa",
     image:
-      "//challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_thumbnails/001/131/190/datas/medium.png",
+      "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_thumbnails/001/131/190/datas/medium.png",
+    date: "4:00pm CEST Aug 30, 2020",
   },
   {
     name: "Betahack - Let's Fix The Internet",
@@ -359,7 +364,8 @@ var hackathons = [
     desc:
       "Betaworks Ventures' virtual hackathon aimed at catalyzing startup activity around Fixing The Internet",
     image:
-      "//challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_thumbnails/001/155/342/datas/medium.png",
+      "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_thumbnails/001/155/342/datas/medium.png",
+    date: "11:45pm EDT Aug 30, 2020",
   },
   {
     name: "BOTHACKS",
@@ -367,7 +373,8 @@ var hackathons = [
       "https://bothacks2020.devpost.com/?ref_content=default&ref_feature=challenge&ref_medium=discover",
     desc: "A hackathon for the Big Heroes of Tomorrow",
     image:
-      "//challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_thumbnails/001/161/004/datas/medium.jpg",
+      "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_thumbnails/001/161/004/datas/medium.jpg",
+    date: "8:00pm IST Aug 30, 2020",
   },
   {
     name: "DurJam",
@@ -375,7 +382,8 @@ var hackathons = [
       "https://durjam.devpost.com/?ref_content=default&ref_feature=challenge&ref_medium=discover",
     desc: "Build a game from scratch from 26th-30th August! Open to students of all ages!",
     image:
-      "//challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_thumbnails/001/176/846/datas/medium.png",
+      "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_thumbnails/001/176/846/datas/medium.png",
+    date: "3:00pm BST Aug 30, 2020",
   },
   {
     name: "Jumpstart EdTech",
@@ -384,7 +392,8 @@ var hackathons = [
     desc:
       "Student-centered virtual startup competition focusing on improving online education using both business and technology",
     image:
-      "//challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_thumbnails/001/192/217/datas/medium.png",
+      "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_thumbnails/001/192/217/datas/medium.png",
+    date: "2:00pm CDT Aug 30, 2020",
   },
   {
     name: "Suns Out Hacks Out",
@@ -392,7 +401,8 @@ var hackathons = [
       "https://sunsouthacksout.devpost.com/?ref_content=default&ref_feature=challenge&ref_medium=discover",
     desc: "Help us celebrate the final days of summer at Suns Out Hacks Out",
     image:
-      "//challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_thumbnails/001/199/658/datas/medium.png",
+      "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_thumbnails/001/199/658/datas/medium.png",
+    date: "8:00am EDT Aug 30, 2020",
   },
   {
     name: "3rd Annual AWS Hackathon for Good",
