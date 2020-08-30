@@ -1,4 +1,5 @@
 const Discord = require("discord.js");
+const AsciiTable = require("ascii-table");
 const config = require("./config.json");
 const { news, hackathons } = require("./hacks");
 
@@ -7,6 +8,19 @@ const client = new Discord.Client();
 client.once("ready", () => {
   console.log(`${client.user.tag} is online :)`);
 });
+
+const people = [
+  {
+    name: "Chris#4392",
+    timezone: "GMT-0430",
+    skills: "I'm a game developer that's well-versed in Unity and Pygame.",
+  },
+  {
+    name: "PoopDeLaScoop#7482",
+    timezone: "GMT+0530",
+    skills: "I do graphic design and have some experience with discord-py ;)",
+  },
+];
 
 client.on("message", message => {
   if (message.content === "!ping") {
@@ -75,6 +89,14 @@ client.on("message", message => {
           })
           .catch(collected => {});
       });
+  }
+  if (message.content === "!findpeople") {
+    const table = AsciiTable.factory({
+      title: "** Available Hackers **",
+      heading: ["Discord ID", "Timezone", "Skills"],
+      rows: people.map(elem => [elem.name, elem.timezone, elem.skills]),
+    });
+    message.channel.send("```\n" + table.toString() + "```");
   }
 });
 
