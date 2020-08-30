@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;800&display=swap");
+
 html,
 body {
   margin: 0;
@@ -5,23 +7,64 @@ body {
 }
 
 body {
+  background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(
+      #1d1d1d 25%,
+      #1a1a1a 25%,
+      #1a1a1a 50%,
+      transparent 50%,
+      transparent 75%,
+      #242424 75%,
+      #242424
+    );
+  background-color: #131313;
+  background-size: 20px 20px;
+}
+.map,
+.overmap {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+.overmap {
   display: grid;
   grid-template-rows: 100px 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "header header"
-    "content map"
-    "content chat";
+    "content news"
+    "content news";
+  z-index: 4;
+  pointer-events: none;
 }
 .header {
   grid-area: header;
   justify-self: center;
+  align-self: center;
+}
+.header h1 {
+  font-family: "Raleway";
+  font-weight: 800;
+  color: #262626;
+  font-size: 90px;
+  text-shadow: 4px 3px 4px #f2eccf;
+}
+.italics {
+  font-style: italic;
 }
 .map {
-  grid-area: map;
+  z-index: 2;
 }
-.chat {
-  grid-area: chat;
+.news {
+  grid-area: news;
 }
 .content {
   grid-area: content;
@@ -31,4 +74,14 @@ body {
   top: -40px;
   right: -40px;
   width: 100px;
+}
+
+.ui.items {
+  margin: 10px;
+  padding: 15px;
+  background-color: white;
+}
+
+.item {
+  pointer-events: initial;
 }

@@ -4,21 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HackerDash</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body>
-    <div class="header"><img src="assets/images/hackerdash.png" /></div>
-    <div class="map" id="map"></div>
-    <div class="chat"></div>
-    <div class="content"></div>
-    <img src="assets/images/sun.svg" alt="You need the sunshine" class="sun" />
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
     <link
       rel="stylesheet"
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.6/dist/semantic.min.css"
     />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="map" id="map"></div>
+    <div class="overmap">
+      <div class="header">
+        <h1>HACKER<span class="italics">DASH</span></h1>
+      </div>
+      <div class="news">
+        <div class="ui items">
+          <h1 class="ui header">MLH News!</h1>
+        </div>
+      </div>
+      <div class="content">
+        <div class="ui items">
+          <h1 class="ui header">Upcoming Hackathons</h1>
+        </div>
+      </div>
+    </div>
+    <img src="assets/images/sun.svg" alt="You need the sunshine" class="sun" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.6/dist/semantic.min.js"></script>
+    <script src="assets/js/constants.js"></script>
     <script src="assets/js/script.js"></script>
     <script
       defer
